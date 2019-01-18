@@ -1,0 +1,12 @@
+'use strict';
+export {};
+let i:number = 6;
+// i = attendee;
+let j:number = 5;
+// j = workdays;
+let sum:number = i * j;
+let sum2:number = sum + 22;
+let k:number = 17;
+// k = semester;
+console.log("An avarage attendee spends " + sum * k + " hours coding in a semester.");
+console.log("The percentage of the coding hours is " + sum / sum2 * 100 + "% counted by 52 work hours a week.");
