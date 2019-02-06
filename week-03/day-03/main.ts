@@ -9,9 +9,9 @@ import { Pokemon } from './export-pokemon'
 let pokemonOfAsh: Pokemon[] = initializePokemon();
 
 let wildPokemon: Pokemon = new Pokemon('Oddish', 'leaf', 'water');
-console.log(wildPokemon);
+//console.log(wildPokemon);
 
-if (this.effectiveAgainst == 'water') {
+/*if (this.effectiveAgainst == 'water') {
   return this.effectiveAgainst == 'fire';
  } else if (this.effectiveAgainst == 'leaf') {
    return effectiveAgainst == 'water';
@@ -21,6 +21,8 @@ if (this.effectiveAgainst == 'water') {
    return this.effectiveAgainst == 'water';
  }
 }
+én így kezdtem el
+*/
 
 console.log('I choose you, ');
 
@@ -34,5 +36,10 @@ function initializePokemon(): Pokemon[] {
   ];
 }
 
-console.log(initializePokemon());
+//console.log(initializePokemon());
 
+for (let i: number = 0; i < pokemonOfAsh.length; i++) {
+  if(pokemonOfAsh[i].isEffectiveAgainst(wildPokemon)) {
+    console.log(pokemonOfAsh[i].name);
+  }
+}

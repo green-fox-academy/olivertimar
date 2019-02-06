@@ -11,5 +11,6 @@
 
 let lineCount: number = 6;
 let a: string = '%';
-console.log(a);
-
+console.log(a.repeat(lineCount));
+console.log(a + a.repeat(lineCount));
+console.log(a.repeat(lineCount));

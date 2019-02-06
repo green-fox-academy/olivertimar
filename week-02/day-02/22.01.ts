@@ -35,7 +35,7 @@ console.log(url);
 let out: string = '';
 let notSoCrypticMessage: number[] = [1, 12, 1, 2, 11, 1, 7, 11, 1, 49, 1, 3, 11, 1, 50, 11];
 
-let hashmap = {
+let hashmap: string = {
   7: 'run around and desert you',
   50: 'tell a lie and hurt you ',
   49: 'make you cry, ',
@@ -46,4 +46,13 @@ let hashmap = {
   3: 'say goodbye '
 };
 
-console.log(out)
+
+console.log(hashmap[12]);
+
+
+/*'Never gonna ','give you up, ',
+'Never gonna ','let you down','\n',
+'Never gonna ','run around and desert you','\n',
+'Never gonna ','make you cry, ',
+'Never gonna ','say goodbye ''\n',
+'Never gonna ','tell a lie and hurt you ', '\n',*/

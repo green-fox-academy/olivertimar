@@ -11,11 +11,11 @@
 // The square should have as many lines as lineCount is*/
 
 let lineCount: number = 6;
-let bc: string = '%a%%%%';
+let bc: string = '%%%%%';
 let szpesz: string = '    ';
 let times: number = 0;
 
-for (; times < 5; times++) {
+for (; times < 4; times++) {
   console.log(bc.replace('a', szpesz));
 }
 

@@ -1,8 +1,17 @@
 'use strict';
-export {};
 
-import { Pokemon }  from './export-pokemon';
+export class Pokemon {
+  name: string;
+  type: string;
+  effectiveAgainst: string;
 
-class Pokemon {
-  isEffectiveAgainst();
+  constructor(name: string, type: string, effectiveAgainst: string) {
+      this.name = name;
+      this.type = type;
+      this.effectiveAgainst = effectiveAgainst;
+  }
+
+  isEffectiveAgainst(pokemon: Pokemon): boolean {
+      return this.effectiveAgainst === pokemon.type;
+  }
 }
