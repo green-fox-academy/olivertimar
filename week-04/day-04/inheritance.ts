@@ -21,25 +21,25 @@ export { Person };
 class Person {
   name: string;
   age: number;
-  isMale: boolean;
+  gender: string;
 
-  constructor(pName: string, pAge: number, pIsMale: boolean) {
+  constructor(pName: string, pAge: number, pGender: string = 'female') {
     this.name = pName;
     this.age = pAge;
-    this.isMale = pIsMale;
+    this.gender = pGender;
   }
   introduce() {
-    console.log(`Hi, I'm  ${ this.name }, and a ${ this.age } years old ${ this.isMale }`);
+    console.log(`Hello, I'm  ${ this.name }, and a ${ this.age } years old ${ this.gender }`);
   }
   getGoal() {
     console.log('My goal is: Live for the moment!');
  }
 }
-let Person1 = new Person('Jane Dong', 30, false);
-let Person2 = new Person('John Dong', 25, true);
+let Person1 = new Person('Jane Dong', 30,);
+let Person2 = new Person('John Dong', 25, 'male');
 
-Person1.introduce();
-Person2.introduce();
+//Person1.introduce();
+//Person2.introduce();
 
 
 
