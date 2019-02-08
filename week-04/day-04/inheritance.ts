@@ -35,8 +35,12 @@ class Person {
     console.log('My goal is: Live for the moment!');
  }
 }
-let Person1 = new Person('Jane Dong', 30,);
-let Person2 = new Person('John Dong', 25, 'male');
+
+function Persons () {
+  let Person1 = new Person('Jane Dong', 30,);
+  let Person2 = new Person('John Dong', 25, 'male');
+}
+
 
 //Person1.introduce();
 //Person2.introduce();

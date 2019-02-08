@@ -35,8 +35,8 @@ class Mentor extends Person{
     console.log('My goal is: Educate brilliant junior software developers.');
   }
 }
-let Mentor1 = new Mentor('Jane Dong', 30);
-let Mentor2 = new Mentor('John Dong', 25, 'male', 'senior')
+export let Mentor1 = new Mentor('Jane Dong', 30);
+export let Mentor2 = new Mentor('John Dong', 25, 'male', 'senior')
 
 Mentor1.introduce();
 Mentor1.getGoal();
