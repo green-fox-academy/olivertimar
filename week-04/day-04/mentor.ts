@@ -19,22 +19,20 @@ export { Mentor };
 import { Person } from './inheritance';
 
 class Mentor extends Person{
-  name: string;
-  age: number;
-  gender: string;
   level: string;
 
   constructor(pName: string, pAge: number, pGender: string = 'female', pLevel: string = 'junior') {
     super(pName, pAge, pGender);
     this.level = pLevel;
     }
-  introduce() {
-    console.log(`Hi, I'm ${ this.name }, a ${ this.age } year old ${ this.gender } ${ this.level } mentor.`);
+  introduce(): string {
+    return `Hi, I'm ${ this.nev }, a ${ this.age } year old ${ this.gender } ${ this.level } mentor.`;
   }
-  getGoal() {
-    console.log('My goal is: Educate brilliant junior software developers.');
+  getGoal(): string {
+    return 'My goal is: Educate brilliant junior software developers.';
   }
 }
+/*
 export let Mentor1 = new Mentor('Jane Dong', 30);
 export let Mentor2 = new Mentor('John Dong', 25, 'male', 'senior')
 
@@ -42,4 +40,4 @@ Mentor1.introduce();
 Mentor1.getGoal();
 Mentor2.introduce();
 Mentor2.getGoal();
- 
+*/

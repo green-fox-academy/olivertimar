@@ -1,5 +1,2 @@
-C:\Users\oliver\Desktop\greenfox\olivertimar\week-03\day-02\node_modules
-C:\Users\oliver\Desktop\greenfox\olivertimar\week-02\day-01\node_modules
-package-lock.json
-package.json
-
+*.json
+*node_modules*

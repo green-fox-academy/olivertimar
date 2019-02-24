@@ -21,9 +21,6 @@ export { Student };
 import { Person } from './inheritance';
 
 class Student extends Person{
-  name: string;
-  age: number;
-  gender: string;
   previousOrganization: string;
   skippedDays: number;
 
@@ -32,16 +29,18 @@ class Student extends Person{
     this.previousOrganization = pPrevOrg;
     this.skippedDays = pSkippedD;
     }
-  introduce() {
-    console.log(`Hi, I'm ${ this.name }, a ${ this.age } year old ${ this.gender } from ${ this.previousOrganization } who skipped ${ this.skippedDays } days from the course already.`);
+  introduce(): string {
+    return `Hi, I'm ${ this.nev }, a ${ this.age } year old ${ this.gender } from ${ this.previousOrganization } who skipped ${ this.skippedDays } days from the course already.`;
   }
-  getGoal() {
-    console.log('My goal is: Be a junior software developer.');
+  getGoal(): string {
+    return 'My goal is: Be a junior software developer.';
   }
-  skipDays(numberOfDays) {
-    numberOfDays++;
+  skipDays(numberOfDays: number) {
+    this.skippedDays += numberOfDays;
   }
 }
+
+/*
 export let Student1 = new Student('Jane Dong', 30, 'The School of Life');
 export let Student2 = new Student('John Dong', 25, 'The School of Fools', 'male', 10)
 
@@ -49,5 +48,4 @@ Student1.introduce();
 Student1.getGoal();
 Student2.introduce();
 Student2.getGoal();
- 
-
+*/

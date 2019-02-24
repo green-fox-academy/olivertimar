@@ -21,25 +21,25 @@ import { Student } from "./inheritance-students";
 import { Mentor } from "./mentor";
 //import { Mentor1, Mentor2} from "./mentor";
 
-export {};
+export { Cohort };
 
 class Cohort {
-  name: string;
-  students: Student[];
-  mentors: Mentor[];
+  nevCo: string;
+  students: Student[] = [];
+  mentors: Mentor[] = [];
 
-  constructor (cName: string = 'Bogyo es Baboca', ) {
-  this.name = cName;
+  constructor (cName: string) {
+  this.nevCo = cName;
 }
-  addStudent(Student) {
-    this.students.push(new Student); //itt hozom létre az elemeket
+  addStudent(Student: Student) {
+    this.students.push(Student); //itt hozom létre az elemeket
     //this.students.push(Student1, Student2); => importálom a másik táblában létrehozott elemeket
   }
-  addMentor(Mentor) {
-    this.mentors.push(new Mentor);
+  addMentor(Mentor: Mentor) {
+    this.mentors.push(Mentor);
   }
-  info() {
-    console.log(`The ${ this.name } cohort has ${ this.students.length } students and ${ this.mentors.length } mentors.`);
+  info(): string {
+    return `The ${ this.nevCo } cohort has ${ this.students.length } students and ${ this.mentors.length } mentors.`;
   }
 
 }
